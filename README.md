@@ -72,7 +72,7 @@
     function newProblem() {
       a = Math.floor(Math.random() * 10) + 1;
       b = Math.floor(Math.random() * 10) + 1;
-      document.getElementById("problem").textContent = `(x + □)(x + □) = x² + ${(a + b)}x + ${(a * b)}`;
+      document.getElementById("problem").textContent = `(x + □)(x + □) <br>= x² + ${(a + b)}x + ${(a * b)}`;
       document.getElementById("inputA").value = '';
       document.getElementById("inputB").value = '';
       document.getElementById("result").textContent = '';
