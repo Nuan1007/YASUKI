@@ -56,7 +56,7 @@
     <input type="number" id="inputA" placeholder="a を入力">
     <input type="number" id="inputB" placeholder="b を入力"><br>
     <button onclick="checkAnswer()">答え</button>
-    <button onclick="newProblem()">新しい問題</button>
+    <button onclick="newProblem()">問題</button>
   </div>
 
   <div class="result" id="result"></div>
@@ -72,7 +72,7 @@
     function newProblem() {
       a = Math.floor(Math.random() * 10) + 1;
       b = Math.floor(Math.random() * 10) + 1;
-      document.getElementById("problem").textContent = `(x + □)(x + □) <br>= x² + ${(a + b)}x + ${(a * b)}`;
+      document.getElementById("problem").innerHTML = `(x + □)(x + □)<br>= x² + ${(a + b)}x + ${(a * b)}`;
       document.getElementById("inputA").value = '';
       document.getElementById("inputB").value = '';
       document.getElementById("result").textContent = '';
