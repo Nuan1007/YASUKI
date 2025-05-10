@@ -89,7 +89,7 @@
 
     // QRコード画像を別画面で開く
     function openQR() {
-      window.open("ダウンロード.png", "_blank");
+      window.open("YASUKI.png", "_blank");
     }
 
     newProblem();
