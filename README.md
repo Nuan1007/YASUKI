@@ -32,24 +32,19 @@
       color: #007700;
     }
 
- 
-    .image-container {
+    /* 左下固定のQR表示ボタン */
+    .qr-button {
       position: fixed;
       bottom: 10px;
       left: 10px;
-      width: 140px;
-      height: 140px;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
+      font-size: 16px;
+      padding: 10px 15px;
     }
   </style>
 </head>
 <body>
   <h1>スピード因数分解</h1>
+
   <div class="problem" id="problem">ここに問題が表示されます</div>
 
   <div>
@@ -61,10 +56,8 @@
 
   <div class="result" id="result"></div>
 
-  <div class="image-container">
-
-    <img src="ダウンロード.png" alt="QRコード">
-  </div>
+  <!-- QRコードを別画面で開くボタン -->
+  <button class="qr-button" onclick="openQR()">QRコードを表示</button>
 
   <script>
     let a, b;
@@ -92,6 +85,11 @@
       } else {
         document.getElementById("result").textContent = "不正解";
       }
+    }
+
+    // QRコード画像を別画面で開く
+    function openQR() {
+      window.open("ダウンロード.png", "_blank");
     }
 
     newProblem();
