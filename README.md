@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -51,7 +51,7 @@
     <input type="number" id="inputA" placeholder="a を入力">
     <input type="number" id="inputB" placeholder="b を入力"><br>
     <button onclick="checkAnswer()">答え</button>
-    <button onclick="newProblem()">問題</button>
+
   </div>
 
   <div class="result" id="result"></div>
